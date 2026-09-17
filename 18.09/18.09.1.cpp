@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 std::string month(int c)
 {
     switch (c)
@@ -19,6 +20,7 @@ std::string month(int c)
         default: return {"0"}; break;
     }
 }
+
 void type()
 {
     int c;
@@ -27,6 +29,7 @@ void type()
     if(month(c)=="0") std::cout<< "Error. You were supposed to write a natural number from 1 to 12.";
     else std::cout << "The month with number " << c << " is " << month(c); 
 }
+
 int main()
 {
     type();

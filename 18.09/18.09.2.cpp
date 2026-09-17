@@ -17,6 +17,7 @@ void cycle(int r)
     }
     std::cout << "You are right!";
 }
+
 void init()
 {
     std::random_device rd;
@@ -25,6 +26,7 @@ void init()
     int rand = dist(gen);
     cycle(rand);
 }
+
 int main()
 {
     init();
